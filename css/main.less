@@ -1,0 +1,65 @@
+@import 'reset.css';
+@import 'grid.less';
+
+@columns: 4;
+@column-width: 150;
+@gutter-width: 40;
+
+body {
+  color: #333;
+  font-family: 'Gentium Basic', serif;
+  font-size: 13px;
+  width: 800px;
+  margin: 40px auto;
+}
+
+a {
+  color: #590033;
+  text-decoration: none;
+}
+
+header#main_header {
+  height: 150px;
+  #logo {
+    .column(1);
+    text-align: right;
+  }
+  #title { .column(3);
+    h1 {
+      margin-top: 30px;
+      background-image: url(/img/title.png);
+      text-indent: -9999px;
+      width: 438px;
+      height: 47px;
+    }
+  }
+}
+
+section#main {
+  nav {
+    .column(1);
+    text-align: right;
+    ul {
+      margin: 0;
+      list-style: none;
+      line-height: 1.5;
+      padding-right: 2em;
+      text-transform: uppercase;
+    }
+  }
+
+  section#words {
+    .column(3);
+    h1 {
+      font-size: 18px;
+      line-height: 1;
+      margin: 0; }
+    time {
+      color: #999;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 1;
+      margin: 0;
+    }
+  }
+}

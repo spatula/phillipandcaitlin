@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+  <header>
+    <h1>{{ post.title }}</h1>
+    <time datetime="{{ post.date }}">Posted {{ post.date | date: '%B %d, %Y' }} by {{ post.author }}</time>
+  </header>
+
+  {{ post.content }}
+{% endfor %}

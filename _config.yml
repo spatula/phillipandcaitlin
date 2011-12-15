@@ -1,0 +1,4 @@
+paginate: 1
+permalink: pretty
+rdiscount:
+  extensions: [smart]

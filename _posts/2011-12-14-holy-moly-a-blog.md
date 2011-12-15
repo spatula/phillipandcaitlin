@@ -1,6 +1,7 @@
 ---
 title: "Holy Moly, a Blog!?"
+author: Phillip
 ---
 
-Yep, that's right
+Yep, that's right!
 
