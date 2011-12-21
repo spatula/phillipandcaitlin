@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<header>
+  <h1>Archive</h1>
+</header>
+{% for post in site.posts %}
+  <p class="archive"><em>{{ post.date | date: '%Y %b %d' }}</em> &mdash; <strong><a href="{{ post.permalink }}">{{ post.title }}</a></strong> <em>by {{ post.author }}</em></p>
+{% endfor %}
