@@ -6,4 +6,4 @@ layout: default
   <time datetime="{{ page.date }}">Posted {{ page.date | date: '%B %d, %Y' }} by {{ page.author }}</time>
 </header>
 
-{{ page.content }}
+{{ page.content | markdownify }}
