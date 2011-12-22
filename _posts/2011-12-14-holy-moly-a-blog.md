@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Holy Moly, a Blog!?"
 author: Phillip
 ---

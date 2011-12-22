@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<header>
+  <h1>{{ page.title }}</h1>
+  <time datetime="{{ page.date }}">Posted {{ page.date | date: '%B %d, %Y' }} by {{ page.author }}</time>
+</header>
+
+{{ page.content }}
