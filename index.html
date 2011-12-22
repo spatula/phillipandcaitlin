@@ -2,11 +2,13 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-  <header>
-    <h1>{{ post.title }} <a href="{{ post.url }}"><img src="/img/permalink.png" title="Permalink"/></a></h1>
-    <time datetime="{{ post.date }}">Posted {{ post.date | date: '%B %d, %Y' }} by {{ post.author }}</time>
-  </header>
+{% for post in site.posts limit:1 %}
+<header>
+  <h1>{{ post.title }} <a href="{{ post.url }}"><img src="/img/permalink.png" title="Permalink"/></a></h1>
+  <time datetime="{{ post.date }}">Posted {{ post.date | date: '%B %d, %Y' }} by {{ post.author }}</time>
+</header>
 
-  {{ post.content }}
+{{ post.content }}
 {% endfor %}
+
+<p><a href="/archive/" class="paginator">&larr; Older posts</a></p>

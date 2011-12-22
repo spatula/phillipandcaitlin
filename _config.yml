@@ -1,4 +1,4 @@
-paginate: 1
+paginate: 5
 permalink: pretty
 rdiscount:
   extensions: [smart]
