@@ -9,6 +9,11 @@ layout: default
 </header>
 
 {{ post.content }}
+
+<p class="comments"><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}">Comments</a></p>
+
 {% endfor %}
+
+{% include comment_count.html %}
 
 <p><a href="/archive/" class="paginator">&larr; Older posts</a></p>
