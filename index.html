@@ -1,20 +1,5 @@
 ---
-layout: default
+layout: bare
 ---
 
-{% for post in site.posts limit:1 %}
-<header>
-  <h1>{{ post.title }} <a href="{{ post.url }}"><img src="/img/permalink.png" title="Permalink"/></a></h1>
-  <time datetime="{{ post.date }}">Posted {{ post.date | date: '%B %d, %Y' }} by {{ post.author }}</time>
-</header>
-
-{{ post.content }}
-
-<p class="comments"><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}">Comments</a></p>
-
-{% endfor %}
-
-{% include comment_count.html %}
-
-<p><a href="/archive/" class="paginator">&larr; Older posts</a></p
-
+<h3>Phillip & Caitlin</h3>
