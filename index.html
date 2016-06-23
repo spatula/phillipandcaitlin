@@ -2,4 +2,32 @@
 layout: bare
 ---
 
-<h3>Phillip &amp; Caitlin</h3>
+<style>
+  .aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aligner-item {
+    max-width: 50%;
+  }
+  
+  .aligner-item--top {
+    align-self: flex-start;
+  }
+  
+  .aligner-item--bottom {
+    align-self: flex-end;
+  }
+</style>
+
+<div class="aligner">
+  <div class="aligner-item--top"></div>
+  <div class="aligner-item">
+    <img src="logo.png">
+    <img src="title.png">
+  </div>
+  <div class="aligner-item--bottom"></div>
+</div>
+
